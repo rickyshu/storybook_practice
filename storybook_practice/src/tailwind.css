@@ -25,20 +25,13 @@
 .react-calendar__navigation__arrow {
   color: #afafaf;
 }
+
 .react-calendar__navigation__next-button {
   font-size: 1.3rem !important;
 }
 .react-calendar__navigation__prev-button {
   font-size: 1.3rem !important;
 }
-/* 두 단계 앞서 가는 버튼 */
-/* .react-calendar__navigation__next2-button {
-  display: none !important;
-}
-
-.react-calendar__navigation__prev2-button {
-  display: none !important;
-} */
 
 .react-calendar button {
   margin: 0;
@@ -122,6 +115,7 @@
   background: #535884;
   color: white;
 }
+
 /* 날짜 밑줄 없애기 */
 abbr[title] {
   text-decoration: none;
@@ -149,23 +143,19 @@ abbr[title] {
   background: #535884;
 }
 
-.react-calendar__tile--hasActive:enabled:hover,
+/* 필요 없으면 삭제하기 */
+/* .react-calendar__tile--hasActive:enabled:hover,
 .react-calendar__tile--hasActive:enabled:focus {
-  background: #a9d4ff;
+  background: red;
+} */
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #535884;
 }
 
-/* .react-calendar__tile--active {
-  background: #006edc;
-  color: white;
-} */
-
-/* .react-calendar__tile--active:enabled:hover,
-.react-calendar__tile--active:enabled:focus {
-  background: #1087ff;
-} */
-
 .react-calendar--selectRange .react-calendar__tile--hover {
-  background-color: #e6e6e6;
+  background-color: #eaeef9;
 }
 
 @layer base {
