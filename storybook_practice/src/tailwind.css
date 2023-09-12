@@ -21,9 +21,24 @@
   box-sizing: border-box;
 }
 
+/* arrow button */
 .react-calendar__navigation__arrow {
   color: #afafaf;
 }
+.react-calendar__navigation__next-button {
+  font-size: 1.3rem !important;
+}
+.react-calendar__navigation__prev-button {
+  font-size: 1.3rem !important;
+}
+/* 두 단계 앞서 가는 버튼 */
+/* .react-calendar__navigation__next2-button {
+  display: none !important;
+}
+
+.react-calendar__navigation__prev2-button {
+  display: none !important;
+} */
 
 .react-calendar button {
   margin: 0;
@@ -32,15 +47,10 @@
   outline: none;
 }
 
-/* 날짜를 hover */
-.react-calendar button:enabled:hover {
-  cursor: pointer;
-}
-
 /* navigation layout을 나타내고 있다.*/
 .react-calendar__navigation {
   display: flex;
-  gap: 15px;
+  gap: 1.5rem;
   margin-bottom: 1.2em;
 }
 
@@ -52,13 +62,7 @@
   line-height: normal;
 }
 
-.react-calendar__navigation button:disabled {
-  background-color: #f0f0f0;
-}
-
-.react-calendar__month-view__days button {
-}
-
+/* week와 관련된 css */
 .react-calendar__month-view__weekdays {
   color: #383838;
   text-align: center;
@@ -67,6 +71,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
 .react-calendar__month-view__weekdays__weekday {
@@ -80,6 +85,7 @@
   justify-content: center;
   font-size: 0.5rem;
   font-weight: bold;
+  border: 1px solid red;
 }
 
 /* 아마 전체 숫자의 크기를 조절하는 곳이 있을 것이다. */
@@ -88,11 +94,11 @@
 }
 
 /* title을 눌렀을 때 나오는 것들에 대한 css를 조작하는 것! */
-.react-calendar__year-view .react-calendar__tile,
+/* .react-calendar__year-view .react-calendar__tile,
 .react-calendar__decade-view .react-calendar__tile,
 .react-calendar__century-view .react-calendar__tile {
   padding: 2em 0.5em;
-}
+} */
 
 .react-calendar__tile {
   max-width: 100%;

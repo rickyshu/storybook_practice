@@ -11,16 +11,14 @@ function App() {
 
   return (
     <div className="border border-2 border-slate-950 w-full h-full flex items-center justify-center">
-      <Calendar
-        onChange={setDate}
-        value={date}
-        formatDay={(locale, date) => format(date, "d")}
-        locale="en-GB"
-        selectRange={true}
-        minDetail="month"
-      />
+      <Calendar onChange={setDate} value={date} formatDay={(locale, date) => format(date, "d")} locale="en-GB" selectRange={true} minDetail="month" showFixedNumberOfWeeks={true} prev2Label next2Label />
     </div>
   );
 }
 
 export default App;
+
+/*
+1. 먼저 위 저화살표 버튼 없애고
+2. 그 다음 저 동그라미를 도전해보자!
+*/
